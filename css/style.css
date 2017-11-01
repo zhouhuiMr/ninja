@@ -1,0 +1,327 @@
+* {
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body, html {
+    overflow: hidden;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+#gamestage {
+    width: 800px;
+    height: 600px;
+    background: #FAEBD7;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    border: 3px solid #FAEBD7;
+    box-shadow: 0 0 15px #95938e;
+}
+
+/**-----    游戏说明的提示    -------**/
+#explain {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    cursor: pointer;
+}
+#explaincontent{
+    width: 800px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#explaincontent p {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+#explaincontent span{
+    font-size: 20px;
+    color: #222; text-shadow: 0px 2px 3px #555;
+}
+
+/**--------     加载的动画效果      ----------**/
+#loadingspan {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#loadingspan p {
+    margin-top: 20px;
+    font: 900 18px '微软雅黑', '宋体';
+    color: #f67937;
+    animation: textmove 3s infinite;
+    -webkit-animation: textmove 3s infinite;
+}
+
+@keyframes textmove {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes textmove {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.headtop {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    background: #f67937;
+    position: relative;
+    z-index: 100;
+    animation: headtoprotate 0.5s infinite;
+    -webkit-animation: headtoprotate 0.5s infinite;
+}
+
+.headbot {
+    width: 100px;
+    height: 50px;
+    border-radius: 0px 0px 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    background: #f67937;
+    position: relative;
+    z-index: 100;
+    animation: headbotrotate 0.5s infinite;
+    -webkit-animation: headbotrotate 0.5s infinite;
+}
+
+@keyframes headtoprotate {
+    0% {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+}
+
+@-webkit-keyframes headtoprotate {
+    0% {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+}
+
+@keyframes headbotrotate {
+    0% {
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@-webkit-keyframes headbotrotate {
+    0% {
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #f67937;
+    top: 90px;
+    position: absolute;
+    z-index: 50;
+}
+
+.food1 {
+    left: 180px;
+    animation: move1 0.5s infinite;
+    -webkit-animation: move1 0.5s infinite;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move1 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+        opacity: 0;
+    }
+}
+
+.food2 {
+    left: 240px;
+    animation: move2 0.5s infinite;
+    -webkit-animation: move2 0.5s infinite;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+    }
+}
+
+@-webkit-keyframes move2 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+    }
+}
+
+.food3 {
+    left: 300px;
+    opacity: 0;
+    animation: move3 0.5s infinite;
+    -webkit-animation: move3 0.5s infinite;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes move3 {
+    0% {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+    }
+    100% {
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+        opacity: 1;
+    }
+}
+
+#bt_left {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    background: url("/ninja/resources/prop/pjump.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#bt_right1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 160px;
+    right: 10px;
+    z-index: 100;
+    background: url("/ninja/resources/prop/uibs.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#bt_right2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 100;
+    background: url("/ninja/resources/prop/uibiao.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    display: none;
+}

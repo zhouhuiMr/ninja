@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="user-scalable=no;" name="viewport" />
+    <title>Ninja</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/ninja/css/style.css">
+    <script src="/ninja/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div id="gamestage"></div>
+<div id="explain">
+    <div id="explaincontent">
+        <p>游戏说明：</p>
+        <br>
+        <span>
+            使用W键进行跳跃，双击可进行二段跳；使用J键进行攻击
+        </span>
+    </div>
+</div>
+<!--     加载动画     -->
+<div id="loadingspan">
+    <div class="headtop"></div>
+    <div class="headbot"></div>
+    <div class="food food1"></div>
+    <div class="food food2"></div>
+    <div class="food food3"></div>
+    <p>正在加载数据...0%</p>
+</div>
+<!--     手机控制的按钮      -->
+<div id="bt_span">
+    <div id="bt_left"></div>
+    <!--<div id="bt_right1"></div>-->
+    <div id="bt_right2"></div>
+</div>
+</body>
+<script src="/ninja/js/device.js"></script>
+<script src="/ninja/js/pixi/pixi.min.js"></script>
+<script src="/ninja/js/stats.min.js"></script>
+<script src="/ninja/js/background.js"></script>
+<script src="/ninja/js/Ninja.js"></script>
+<script src="/ninja/js/scene.js"></script>
+<script src="/ninja/js/load.js"></script>
+</html>
