@@ -292,7 +292,6 @@ body {
     bottom: 10px;
     left: 10px;
     z-index: 100;
-    background: url("/ninja/resources/prop/pjump.png");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     display: none;
@@ -306,7 +305,6 @@ body {
     bottom: 160px;
     right: 10px;
     z-index: 100;
-    background: url("/ninja/resources/prop/uibs.png");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     display: none;

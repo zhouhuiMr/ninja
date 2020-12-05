@@ -7,17 +7,17 @@ console.info("已经加载文件：load.js");
         //加载资源的方法
         this.loadresources = function(){
             var loader = PIXI.loader;
-            loader.add("homebg1","/ninja/resources/background/bg1.png");
-            loader.add("homebg2","/ninja/resources/background/bg2.png");
-            loader.add("prop","/ninja/resources/prop/prop.json");
-            loader.add("scene","/ninja/resources/background/scene.json");
-            loader.add("ninja","/ninja/resources/ninja/ninja.json");
-            loader.add("farback1","/ninja/resources/background/background1_1.png");
-            loader.add("nearback1","/ninja/resources/background/background1_2.png");
-            loader.add("farback2","/ninja/resources/background/background2_1.png");
-            loader.add("nearback2","/ninja/resources/background/background2_2.png");
-            loader.add("farback3","/ninja/resources/background/background3_1.png");
-            loader.add("nearback3","/ninja/resources/background/background3_2.png");
+            loader.add("homebg1","resources/background/bg1.png");
+            loader.add("homebg2","resources/background/bg2.png");
+            loader.add("prop","resources/prop/prop.json");
+            loader.add("scene","resources/background/scene.json");
+            loader.add("ninja","resources/ninja/ninja.json");
+            loader.add("farback1","resources/background/background1_1.png");
+            loader.add("nearback1","resources/background/background1_2.png");
+            loader.add("farback2","resources/background/background2_1.png");
+            loader.add("nearback2","resources/background/background2_2.png");
+            loader.add("farback3","resources/background/background3_1.png");
+            loader.add("nearback3","resources/background/background3_2.png");
             loader.load(function(loader, resources){
                 document.body.removeChild(document.getElementById("loadingspan"));
                 window.resources = resources;
